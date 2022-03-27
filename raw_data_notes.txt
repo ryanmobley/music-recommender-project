@@ -1,0 +1,4 @@
+val rawData = spark.read.option("header", true).csv("Dataset/train.csv")
+rawData.count // 7377418 entries
+rawData.select("msno").distinct().count // 30755 user accounts
+rawData.select("song_id").distinct().count // 359966 songs

@@ -1,0 +1,6 @@
+# Ignore archives
+*.zip
+*.7z
+
+# Ignore raw data
+*.csv
